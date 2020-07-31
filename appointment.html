@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Appointments</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="appointment.js"> </script>
+    <script src="nav.js"> </script>
+    <link rel="icon" href="Images/lav-logo.jpg">
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class = "logo">
+                <a href="index.html" ><H4>Lavender Nails</H4></a>
+            </div>
+            <ul class='nav-links'>
+                <li>
+                    <a href='index.html'>Home</a>
+                </li>
+                <li>
+                    <a href='appointment.html'>Appointments</a>
+                </li>
+                <li>
+                    <a href='service.html'>Services</a>
+                </li>
+                <li>
+                    <a href='contact.html'>Contact Us</a>
+                </li>
+                <li>
+                    <a href='about.html'>About</a>
+                </li>
+            </ul>
+            <div class = "burger">
+                <div class = "line1"> </div>
+                <div class = "line2"> </div>
+                <div class = "line3"> </div>
+            </div>
+
+        </nav>
+    </header>
+    <div class ="whitespace"></div>
+
+
+    <main>
+        <section id="book">
+            <div class="container">
+                <h1>Book An Appointment Today</h1>
+                <h3>All appointments will be confirmed via email or phone. Appointments not valid until confirmation.</h3>
+            </div>
+        </section>
+        <div class="whitespace"></div>
+
+        <section id="forms">
+            <div class="container">
+                <h1>Need to make an appointment?<br> Send us a request below to schedule your appointment.</h1>
+                <form id="aform" action="mailto:phisabya@gmail.com" method="post"  novalidate="novalidate">
+                    <div id="datetime">
+                        <p>Select Date (required)  <span class="date-selection">
+                            <input type="text" name="date" value="" id="datepick" aria-required="true" aria-invalid="false" >
+                        <br></span>  Time Requested (required)
+                           <input type="time" name="text-761" value="" size="40" class="time" aria-required="true" aria-invalid="false"></p>
+                        <p>Service(s) Requested (required) <span class="checkbox">
+                            <span class="checkbox-validates"><span class="first">
+                                <input type="checkbox" name="checkbox1" value="Nail Services">
+                                <span class="list-item">Nail Services</span></span>
+                                <span class="check1"><input type="checkbox" name="checkbox-577[]" value="Facial">
+                                    <span class="check2">Facial</span></span>
+                                <span class="check3"><input type="checkbox" name="checkbox-577[]" value="Waxing">
+                                    <span class="check4">Waxing</span></span>
+                            </span>
+                        </span>
+                        </p>
+                        <p>Name (required) <input type="text" name="your-name" value=""  class="name" aria-required="true" aria-invalid="false" placeholder="First Last"></p>
+                        <p>Your Email (required) <input type="email" name="your-email" value=""  class="validates-email" aria-required="true" aria-invalid="false" placeholder=" name@email.com"> </p>
+                        <p>Phone Number (required) <input type="text" name="text-521" value="" class="validates-number" aria-required="true" aria-invalid="false" placeholder="555-555-5555"></p>
+
+                    </div>
+                    <p><input type="submit" id="button"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="https://validator.w3.org/check?uri=referer">Validate HTML</a> <br>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+    </footer>
+</body>
+</html>

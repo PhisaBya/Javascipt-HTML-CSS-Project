@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="lavender.js"> </script>
+    <script src="nav.js"> </script>
+    <link rel="icon" href="Images/lav-logo.jpg">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class = "logo">
+                <a href="index.html" ><H4>Lavender Nails</H4></a>
+            </div>
+            <ul class='nav-links'>
+                <li>
+                    <a href='index.html'>Home</a>
+                </li>
+                <li>
+                    <a href='appointment.html'>Appointments</a>
+                </li>
+                <li>
+                    <a href='service.html'>Services</a>
+                </li>
+                <li>
+                    <a href='contact.html'>Contact Us</a>
+                </li>
+                <li>
+                    <a href='about.html'>About</a>
+                </li>
+            </ul>
+            <div class = "burger">
+                <div class = "line1"> </div>
+                <div class = "line2"> </div>
+                <div class = "line3"> </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section id="contacts">
+            <div class="container-contact">
+                <h3>Contact Us</h3>
+                <p>Phone: (704) 964-4030</p>
+            </div>
+        </section>
+        <div class="forms">
+            <form action="mailto:phisa.bya@gmail.com" method=”POST”  enctype=”text/plain” name=”EmailTestForm”>
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="contact@yourdomain.com" required>
+
+                <label for="message">Message</label>
+                <input type="text" id="message">
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+    </main>
+    <footer>
+        <a href="https://validator.w3.org/check?uri=referer">Validate HTML</a> <br>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+    </footer>
+</body>
+</html>
